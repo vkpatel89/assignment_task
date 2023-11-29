@@ -1,14 +1,30 @@
 :root {
     --text-text-placeholder: #A8A8A8;
     --tag-green-text: #0E6027;
+    --tag-green-bg: #C2F3CF;
     --text-text-primary: #161616;
+    --text-text-secondary: #525252;
     --button-button-primary: #0F62FE;
     --tag-purple-text: #6929C4;
+    --tag-purple-background: #E8DAFF;
+    --tag-purple-bg: #EBE2FB;
     --tag-cyan-text: #00539A; 
+    --tag-cyan-bg: #CDEBEB;
     --tag-blue-text: #0043CE;
-
-
-    
+    --tag-blue-bg: #D1E1FB;
+    --main-card-comment-bg: #DAEEED;
+    --button-button-separator: #E0E0E0;
+    --card-right-border: #636FFD;
+    --see-more: #979797;
+    --cal-leave: #A7E2BB;
+    --cal-absent: #F24912;
+    --cal-circle-red: #FE1024;
+    --cal-circle-green: #19AB97;
+    --cal-circle-dark-green: #0DA100;  
+    --cal-circle-yellow: #EEB934; 
+    --progress--bar: #D9D9D9;   
+    --progress-bar-active: #42BE65;      
+    --grey-badge: #F4F4F4;
     --white: #ffffff;
     --black: #000000;
   }

@@ -1,0 +1,14 @@
+@import './_colors.css';
+
+body{
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif; */
+}
+.font-ibm-plex{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+.test{
+    color: var(--button-button-primary);
+    font-family: 'IBM Plex Sans', sans-serif;
+}
