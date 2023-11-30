@@ -1,6 +1,6 @@
-@import './_reset.css';
-@import './_colors.css';
-@import './_utilities.css'; 
+@import './reset.css';
+@import './colors.css';
+@import './utilities.css'; 
 html{
     font-size: 16px;
 }
@@ -191,4 +191,40 @@ body{
     padding: 4px 8px;
     border-radius: 1000px;
     margin-left: 12px;
+}
+.feed-details-wrapper{
+    width: 65%;
+    padding: 0 24px;
+}
+.quick-action-wrapper{
+    width: 35%;
+}
+.main-heading{
+    color: var(--text-text-primary);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 32px; 
+    letter-spacing: -0.24px;
+}
+.feed-menu-wrapper{
+    margin-top: 1rem;
+    padding: 16px 24px;
+    border-radius: 8px;
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.10);
+}
+.feed-icon-wrapper{
+    margin-right: 4px;
+    border-radius: 8px;
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+}
+.feed-post-link{
+    text-decoration: none;
+}
+.welcome-user-icon{
+    margin-left: 1rem;
+}
+.seprator-long{
+    margin: 16px 0;
 }
