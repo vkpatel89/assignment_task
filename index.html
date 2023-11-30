@@ -1,17 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment | HR One</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/page.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
+
 <body>
-    <h1 class="test">HR One</h1>
-    
+    <div class="main">
+        <header class="main-header">
+            <nav aria-label="main navigation" class="main-navigation">
+                <div class="display-flex nav-container align-center ps-relative">
+                    <div class="logo-search-wrapper display-flex">
+                        <a href="#" class="home-page-link display-inline-block">
+                            <img src="./assets/images/header/page-logo.png" alt="Logo" class="page-logo">
+                        </a>
+                        <div class="search-box ps-relative">
+                            <span class="search-icon display-inline-block ps-absolute"></span>
+                            <input aria-label="Global search box" type="text"
+                                placeholder="Search for actions, pages, requests, reports, People"
+                                class="global-search-box">
+                        </div>
+
+                    </div>
+                    <div class="main-menu-wrapper margin-l-auto" id="mainMenu">
+                        <ul class="main-menu-list">
+                            <li class="main-menu-item display-inline-block">
+                                <a href="#" class="main-menu-link display-inline-block" title="T20">
+                                    <img src="./assets/images/header/t20.png" alt="Menu icon" class="main-menu-icon">
+                                </a>
+                            </li>
+                            <li class="main-menu-item display-inline-block">
+                                <a href="#" class="main-menu-link display-inline-block" title="Ideaa">
+                                    <img src="./assets/images/header/idea.svg" alt="Menu icon" class="main-menu-icon">
+                                </a>
+                            </li>
+                            <li class="main-menu-item display-inline-block">
+                                <a href="#" class="main-menu-link display-inline-block" title="Store">
+                                    <img src="./assets/images/header/store.svg" alt="Menu icon" class="main-menu-icon">
+                                </a>
+                            </li>
+                            <li class="main-menu-item display-inline-block">
+                                <a href="#" class="main-menu-link display-inline-block" title="Notification">
+                                    <img src="./assets/images/header/notification.svg" alt="Menu icon"
+                                        class="main-menu-icon">
+                                </a>
+                            </li>
+                            <li class="main-menu-item display-inline-block">
+                                <a href="#" class="main-menu-link display-inline-block" title="Pin">
+                                    <img src="./assets/images/header/pin-filled.svg" alt="Menu icon"
+                                        class="main-menu-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hamburger-menu" id="hamburgerIcon" aria-label="Navigation Menu" role="button" aria-expanded="true" tabindex="0">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <script src="./assets/js/page.js"></script>
 </body>
+
 </html>

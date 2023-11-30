@@ -1,0 +1,18 @@
+.display-flex{
+    display: flex;
+}
+.display-inline-block{
+    display: inline-block;
+}
+.align-center{
+    align-items: center;
+}
+.margin-l-auto{
+    margin-left: auto;
+}
+.ps-relative{
+    position: relative;
+}
+.ps-absolute{
+    position: absolute;
+}
