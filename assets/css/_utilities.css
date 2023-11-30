@@ -1,6 +1,9 @@
 .display-flex{
     display: flex;
 }
+.display-iniline-flex{
+    display: inline-flex;
+}
 .display-inline-block{
     display: inline-block;
 }
@@ -15,4 +18,59 @@
 }
 .ps-absolute{
     position: absolute;
+}
+.justfy-space-between{
+    justify-content: space-between;
+}
+.align-top{
+    align-items: flex-start;
+}
+
+.tag-green-text{
+    color: var(--tag-green-text);
+}
+.tag-green-bg{
+    background: var(--tag-green-bg);
+}
+.tag-purple-text{
+    color: var(--tag-purple-text);
+}
+.tag-purple-bg{
+    background: var(--tag-purple-bg);
+}
+.tag-cyan-text{
+    color: var(--tag-cyan-text);
+}
+.tag-cyan-bg{
+    background: var(--tag-cyan-bg);
+}
+.tag-blue-text{
+    color: var(--tag-blue-text);
+}
+.tag-blue-bg{
+    background: var(--tag-blue-text);
+}
+.text-white{
+    color: var(--white);
+}
+.background-white{
+    background: var(--white);
+}
+.text-text-secondary{
+    color: var(--text-text-secondary);
+}
+.post-bg{
+    background: var(--post-bg);
+}
+.badge-bg{
+    background: var(--badge-bg);
+}
+.reward-bg{
+    background: var(--reward-bg);
+}
+.endorse-bg{
+    background: var(--endorse-bg);
+}
+.font-sm{
+    font-size: .75rem;
 }

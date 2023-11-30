@@ -6,3 +6,11 @@
 ul{
     list-style: none;
 }
+img{
+    max-width: 100%;
+}
+button{
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
