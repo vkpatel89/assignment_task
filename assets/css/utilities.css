@@ -1,7 +1,7 @@
 .display-flex{
     display: flex;
 }
-.display-iniline-flex{
+.display-inline-flex{
     display: inline-flex;
 }
 .display-inline-block{
@@ -73,4 +73,10 @@
 }
 .font-sm{
     font-size: .75rem;
+}
+.margin-y-4{
+    margin: 4px 0;
+}
+.margin-b-0{
+    margin-bottom: 0 !important;
 }

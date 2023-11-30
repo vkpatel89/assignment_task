@@ -228,3 +228,25 @@ body{
 .seprator-long{
     margin: 16px 0;
 }
+.feed-card .misc-card-image{
+    width: 3rem;
+    height: 3rem;
+    margin-right: .5rem;
+}
+.profile-update-time{
+    color: var(--text-text-placeholder);
+}
+.feed-card{
+    padding: .5rem 1rem;
+    box-shadow: 1px 4px 12px 0px rgba(0, 0, 0, 0.10);
+    border-right: 4px solid #636FFD;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+.profile-desc-icon{
+    max-width: 1rem;
+}
+.feed-heading2{
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
