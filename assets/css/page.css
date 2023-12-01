@@ -226,8 +226,8 @@ body {
 }
 
 .feed-details-wrapper {
-    width: calc(100% 1 320px);
-    padding: 0 24px;
+    width: calc(100% - 320px);
+    padding: 0 16px;
 }
 
 .quick-action-wrapper {
@@ -290,7 +290,15 @@ body {
     border-radius: 8px;
     margin-right: 1rem;
 }
-
+.for-you-card .feed-card{
+    padding: .5rem;
+}
+.for-you-card .feed-card .misc-profile-card{
+    padding: 0.25rem .5rem;
+}
+.for-you-card .feed-card .misc-profile-card .profile-desc-icon{
+    margin-right: 4px;
+}
 .profile-desc-icon {
     max-width: 1rem;
 }
