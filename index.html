@@ -11,12 +11,15 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:wght@500&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <link rel="stylesheet" href="./assets/css/page.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header class="main-header">
         <nav aria-label="main navigation" class="main-navigation">
             <div class="display-flex nav-container align-center ps-relative">
@@ -75,8 +78,11 @@
             </div>
         </nav>
     </header>
+    <!-- Header End-->
 
+     <!-- Main -->
     <div class="main-wrapper">
+         <!-- Left Nav -->
         <aside class="secondary-navigation-wrapper" data-id="headerProfileIcon">
             <nav aria-label="Secondary navigation" class="secondary-navigation">
                 <ul class="secondary-menu-list">
@@ -240,6 +246,8 @@
                 </ul>
             </nav>
         </aside>
+        <!-- Left Nav End -->
+        <!-- Content Part -->
         <div class="content-wrapper display-flex">
             <div class="misc-wrapper">
                 <div class="misc-card">
@@ -413,53 +421,519 @@
 
                     <div class="updates-wrapper">
                         <h2 class="feed-heading2">For You</h2>
-                        <div class="display-flex">
+                        <div class="display-flex for-you-card">
                             <div class="feed-card background-white">
                                 <div class="misc-profile-card display-flex margin-b-0">
                                     <div class="misc-card-image">
-                                        <img class="profile-image" src="./assets/images/column-2/gift.png" alt="Profile Avtar">
+                                        <img class="profile-image" src="./assets/images/column-2/gift.png"
+                                            alt="Profile Avtar">
                                     </div>
                                     <div class="misc-card-content">
                                         <p class="profile-desc"><strong>Happy Birthday</strong></p>
                                         <div class="display-inline-flex align-center margin-y-4">
-                                            <img class="profile-desc-icon" src="./assets/images/column-2/users.png" alt="Icon">
+                                            <img class="profile-desc-icon" src="./assets/images/column-2/users.png"
+                                                alt="Icon">
                                             <p class="profile-desc">15 people wished you</p>
                                         </div>
                                         <p class="profile-update-time font-sm">Today</p>
                                     </div>
-            
+
                                 </div>
                             </div>
 
                             <div class="feed-card background-white">
                                 <div class="misc-profile-card display-flex margin-b-0">
                                     <div class="misc-card-image">
-                                        <img class="profile-image" src="./assets/images/column-2/Thank-you.png" alt="Profile Avtar">
+                                        <img class="profile-image" src="./assets/images/column-2/Thank-you.png"
+                                            alt="Profile Avtar">
                                     </div>
                                     <div class="misc-card-content">
                                         <p class="profile-desc"><strong>You received a badge</strong></p>
                                         <div class="display-inline-flex align-center margin-y-4">
-                                            <img class="profile-desc-icon" src="./assets/images/column-2/avatar-80.png" alt="Icon">
+                                            <img class="profile-desc-icon" src="./assets/images/column-2/avatar-80.png"
+                                                alt="Icon">
                                             <p class="profile-desc">Karan Jain</p>
                                         </div>
                                         <p class="profile-update-time font-sm">Today</p>
                                     </div>
-            
                                 </div>
                             </div>
 
                         </div>
                     </div>
+
+                    <div class="seprator seprator-long"></div>
+                    <div class="updates-wrapper margin-b-16">
+                        <div class="display-flex margin-b-16 align-center justfy-space-between">
+                            <h2 class="feed-heading2 margin-b-0">Feed</h2>
+                            <a href="javascript:void(0)">
+                                <img src="./assets/images/column-2/Filter.svg" alt="Icon">
+                            </a>
+                        </div>
+                        <div class="feed-card-lg background-white">
+                            <div class="misc-profile-card display-flex">
+                                <div class="profile-wrapper display-inline-flex">
+                                    <div class="misc-card-image profile-40">
+                                        <img class="profile-image" src="./assets/images/column-2/avatar-80.png"
+                                            alt="Profile Avtar">
+                                    </div>
+                                    <div class="misc-card-content">
+                                        <p class="profile-desc font-sm-14 margin-b-4"><strong>Snehil Rajput</strong></p>
+                                        <p class="profile-update-time font-sm">2d ago</p>
+                                    </div>
+                                </div>
+                                <div class="profile-tag-wrapper">
+                                    <span
+                                        class="tag-label tag-purple-background tag-purple-text display-inline-block">Featured</span>
+                                </div>
+                            </div>
+                            <div class="seprator seprator-long"></div>
+
+                            <p class="profile-desc font-sm-14">Everyone faces "MONDAY BLUEs" what if we make it a
+                                "MONDAY NEW" in
+                                approach to start the week with a positive attitude.</p>
+                            <div class="see-more-wrapper">
+                                <a class="see-more-link font-sm" href="javascript:void(0)">See more...</a>
+                            </div>
+                            <img src="./assets/images/column-2/feed-image.png" alt="Feed Image">
+
+                            <div class="seprator seprator-long"></div>
+
+                            <ul class="feed-activity display-flex align-center">
+                                <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                    <a class="feed-activity-link display-inline-flex align-center" href="">
+                                        <img class="feed-activity-icon"
+                                            src="./assets/images/column-2/clapping-yellow.png" alt="Icon">
+                                        <span class="profile-update-time font-sm">90</span>
+                                    </a>
+                                </li>
+                                <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                    <a class="feed-activity-link display-inline-flex align-center" href="">
+                                        <span class="profile-update-time font-sm">10 comments</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div
+                                class="misc-card-header padding-8-12 margin-b-0 main-card-comment-bg display-flex justfy-space-between align-center">
+                                <ul class="feed-activity display-flex align-center margin-b-0">
+                                    <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                        <a class="feed-activity-link display-inline-flex align-center" href="">
+                                            <img class="feed-activity-icon"
+                                                src="./assets/images/column-2/clapping-grey.svg" alt="Icon">
+                                            <span class="profile-update-time font-sm">Cheer</span>
+                                        </a>
+                                    </li>
+                                    <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                        <a class="feed-activity-link display-inline-flex align-center" href="">
+                                            <img class="feed-activity-icon" src="./assets/images/column-2/Chat.svg"
+                                                alt="Icon">
+                                            <span class="profile-update-time font-sm">Comment</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="updates-wrapper margin-b-16">
+                        <div class="feed-card-lg background-white">
+                            <div class="misc-profile-card display-flex align-center">
+                                <div class="profile-wrapper display-inline-flex">
+                                    <div class="misc-card-image profile-80">
+                                        <img class="profile-image" src="./assets/images/column-2/avatar-80.png"
+                                            alt="Profile Avtar">
+                                    </div>
+                                    <div class="misc-card-content">
+                                        <p class="profile-desc font-sm-14 margin-b-4"><strong>Kamal Hassan</strong></p>
+                                        <p class="profile-desc margin-b-4">Project Manager,<span
+                                                class="line-break"></span> Product Team</p>
+                                        <p class="profile-update-time font-sm">2d ago</p>
+                                    </div>
+                                    <div class="margin-l-8">
+                                        <img src="./assets/images/column-2/great-job.png" alt="Icon">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="seprator seprator-long"></div>
+
+                            <p class="profile-desc font-sm-14">Thank you for all your wonderful contributions to all our
+                                queries. It was really helpful to have your input. I really appreciate your time that
+                                you spent on our recent queries. It only goes to show how dedicatedly you want to
+                                achieve the best for the company. Thank You!</p>
+
+                            <div class="misc-profile-card display-flex margin-t-16">
+                                <div class="profile-wrapper display-inline-flex">
+                                    <div class="misc-card-image profile-40">
+                                        <img class="profile-image" src="./assets/images/column-2/avatar-80.png"
+                                            alt="Profile Avtar">
+                                    </div>
+                                    <div class="misc-card-content">
+                                        <p class="profile-update-time font-sm  margin-b-4">Received From</p>
+                                        <p class="profile-desc font-sm-14"><strong>Snehil Rajput</strong></p>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="seprator seprator-long"></div>
+
+                            <ul class="feed-activity display-flex align-center">
+                                <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                    <a class="feed-activity-link display-inline-flex align-center" href="">
+                                        <img class="feed-activity-icon"
+                                            src="./assets/images/column-2/clapping-yellow.png" alt="Icon">
+                                        <span class="profile-update-time font-sm">90</span>
+                                    </a>
+                                </li>
+                                <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                    <a class="feed-activity-link display-inline-flex align-center" href="">
+                                        <span class="profile-update-time font-sm">10 comments</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div
+                                class="misc-card-header padding-8-12 margin-b-0 main-card-comment-bg display-flex justfy-space-between align-center">
+                                <ul class="feed-activity display-flex align-center margin-b-0">
+                                    <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                        <a class="feed-activity-link display-inline-flex align-center" href="">
+                                            <img class="feed-activity-icon"
+                                                src="./assets/images/column-2/clapping-grey.svg" alt="Icon">
+                                            <span class="profile-update-time font-sm">Cheer</span>
+                                        </a>
+                                    </li>
+                                    <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                        <a class="feed-activity-link display-inline-flex align-center" href="">
+                                            <img class="feed-activity-icon" src="./assets/images/column-2/Chat.svg"
+                                                alt="Icon">
+                                            <span class="profile-update-time font-sm">Comment</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="updates-wrapper margin-b-16">
+                        <div class="feed-card-lg welcome-post background-white padding-16-24">
+                            <h2 class="feed-heading2 font-sm-14">Welcome post</h2>
+                            <div class="misc-profile-card display-flex ">
+                                <div class="profile-wrapper profile-wrapper-vertical  padding-r-0 padding-l-0">
+                                    <div class="misc-card-image profile-80">
+                                        <img class="profile-image" src="./assets/images/column-2/avatar-80.png"
+                                            alt="Profile Avtar">
+                                    </div>
+                                    <div class="">
+                                        <p class="profile-desc font-sm-14 margin-b-4"><strong>Kamal Hassan</strong></p>
+                                        <p class="profile-update-time font-sm margin-b-4">Project Manager,</p>
+                                        <p class="profile-update-time font-sm margin-b-4">Product Team</p>
+
+                                    </div>
+                                </div>
+
+                                <div class="misc-card-content">
+                                    <h2 class="feed-heading2 font-sm-14 margin-b-4">Introduction</h2>
+                                    <p class="profile-desc font-sm-14 margin-b-4">I have started my corporate journey as
+                                        a consultant and happy to say that I am enjoying my Job. The secret of going a
+                                        long way is to start well and I feel that I have started well with HROne.</p>
+
+                                    <h2 class="feed-heading2 font-sm-14 margin-b-4 margin-t-16">Hobbies</h2>
+                                    <p class="profile-desc font-sm-14 margin-b-4">Cricket,Traveling,Meeting new people
+                                    </p>
+
+                                    <h2 class="feed-heading2 font-sm-14 margin-b-4 margin-t-16">Skills</h2>
+                                    <p class="profile-desc font-sm-14 margin-b-4">communication,smart work,Interpersonal
+                                    </p>
+
+                                </div>
+
+                            </div>
+                            <div class="seprator seprator-long"></div>
+                            <ul class="feed-activity display-flex align-center">
+                                <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                    <a class="feed-activity-link display-inline-flex align-center" href="">
+                                        <img class="feed-activity-icon"
+                                            src="./assets/images/column-2/clapping-yellow.png" alt="Icon">
+                                        <span class="profile-update-time font-sm">90</span>
+                                    </a>
+                                </li>
+                                <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                    <a class="feed-activity-link display-inline-flex align-center" href="">
+                                        <span class="profile-update-time font-sm">10 comments</span>
+                                    </a>
+                                </li>
+                            </ul>
+
+                            <div
+                                class="misc-card-header padding-8-12 margin-b-0 main-card-comment-bg display-flex justfy-space-between align-center">
+                                <ul class="feed-activity display-flex align-center margin-b-0">
+                                    <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                        <a class="feed-activity-link display-inline-flex align-center" href="">
+                                            <img class="feed-activity-icon"
+                                                src="./assets/images/column-2/clapping-grey.svg" alt="Icon">
+                                            <span class="profile-update-time font-sm">Cheer</span>
+                                        </a>
+                                    </li>
+                                    <li class="feed-activity-item comment-item display-inline-flex align-center">
+                                        <a class="feed-activity-link display-inline-flex align-center" href="">
+                                            <img class="feed-activity-icon" src="./assets/images/column-2/Chat.svg"
+                                                alt="Icon">
+                                            <span class="profile-update-time font-sm">Comment</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
 
-                <div class="quick-action-wrapper"></div>
+                <div class="quick-action-wrapper">
+                    <div class="display-flex margin-b-16 align-center justfy-space-between">
+                        <h2 class="font-sm-14 text-text-primary">Quick Actions</h2>
+                        <a href="javascript:void(0)">
+                            <img src="./assets/images/column-3/Settings.svg" alt="Icon">
+                        </a>
+                    </div>
+                    <div class="quick-action-top-space"></div>
+                    <div class="quick-card-wrapper">
+                        <h2 class="font-sm-14 text-text-primary margin-b-8">Mark attendance</h2>
+                        <div class="feed-card-lg background-white margin-b-24">
+                            <div class="mark-attendence display-flex">
+                                <div class="attendence-time">
+                                    <h2 class="time-head font-md-20">
+                                        <span class="time-span">09:00</span>
+                                        <sup class="time-am-pm font-sm-14">AM</sup>
+                                    </h2>
+                                    <p class="font-sm text-black date-wrapper">Thursday, Jan 19 </p>
+
+                                    <button class="clock-btn font-sm-14 margin-t-16"><strong>Clock-In</strong></button>
+
+                                </div>
+                                <div class="attendence-icon margin-l-auto">
+                                    <img src="./assets/images/column-3/clock.png" alt="Icon">
+                                </div>
+                            </div>
+                            <p class="text-text-secondary font-sm margin-t-8">Last clock-out : 17:30,Yesterday</p>
+                        </div>
+                    </div>
+
+                    <div class="quick-card-wrapper">
+                        <div class="display-flex margin-b-16 align-center justfy-space-between">
+                            <h2 class="font-sm-14 text-text-primary">Calendar</h2>
+                            <button class="view-more-btn">Go To Calendar</button>
+                        </div>
+                        <div class="feed-card-lg background-white margin-b-24">
+                            <div id="datepicker" class="calendar-wrapper"></div>
+                            <div class="display-flex calendar-log">
+                                <div class="calendar-log-item">
+                                    <span class="calendar-log-status today display-inline-block"></span>
+                                    <span class="calendar-status-text font-montserrat">Today</span>
+                                </div>
+                                <div class="calendar-log-item">
+                                    <span class="calendar-log-status absent display-inline-block"></span>
+                                    <span class="calendar-status-text font-montserrat">Absent</span>
+                                </div>
+                                <div class="calendar-log-item">
+                                    <span class="calendar-log-status leave display-inline-block"></span>
+                                    <span class="calendar-status-text font-montserrat">Leave</span>
+                                </div>
+                                <div class="calendar-log-item">
+                                    <span class="calendar-log-status present display-inline-block"></span>
+                                    <span class="calendar-status-text font-montserrat">Present</span>
+                                </div>
+                                <div class="calendar-log-item">
+                                    <span class="calendar-log-status holiday display-inline-block"></span>
+                                    <span class="calendar-status-text font-montserrat">Holiday</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="quick-card-wrapper">
+                        <div class="display-flex margin-b-16 align-center justfy-space-between">
+                            <h2 class="font-sm-14 text-text-primary">Leave Balance</h2>
+                            <button class="view-more-btn">See All</button>
+                        </div>
+                        <div class="feed-card-lg background-white margin-b-24">
+                            <div class="display-flex leave-wrapper justfy-space-between">
+                                <div class="casual-leave leave-column">
+                                    <h2 class="main-heading margin-b-4">7</h2>
+                                    <p class="font-sm-14 text-black">Casual Leave</p>
+                                </div>
+                                <div class="sick-leave leave-column">
+                                    <h2 class="main-heading margin-b-4">2</h2>
+                                    <p class="font-sm-14 text-black">Sick Leave</p>
+                                </div>
+                                <div class="earned-leave leave-column">
+                                    <h2 class="main-heading margin-b-4">4</h2>
+                                    <p class="font-sm-14 text-black">Earned Leave</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="quick-card-wrapper">
+                        <div class="display-flex margin-b-16 align-center justfy-space-between">
+                            <h2 class="font-sm-14 text-text-primary">Inititaves</h2>
+                            <button class="view-more-btn">See All</button>
+                        </div>
+                        <div class="feed-card-lg background-white initiative-card ps-relative margin-b-24">
+                            <ul class="initiative-list">
+                                <li class="initiative-item display-flex align-center margin-b-16">
+                                    <span
+                                        class="initiative-count display-inline-flex align-center justify-center">2</span>
+                                    <p class="initiative-text font-sm-14 text-black">initiatives <strong>assigned to
+                                            me</strong></p>
+                                </li>
+                                <li class="initiative-item display-flex align-center margin-b-16">
+                                    <span
+                                        class="initiative-count display-inline-flex align-center justify-center">4</span>
+                                    <p class="initiative-text font-sm-14 text-black">initiatives <strong>assigned by
+                                            me</strong></p>
+                                </li>
+                                <li class="initiative-item display-flex align-center">
+                                    <span
+                                        class="initiative-count display-inline-flex align-center justify-center">3</span>
+                                    <p class="initiative-text font-sm-14 text-black">initiatives <strong>assigned to
+                                            team</strong></p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+
+                    <div class="quick-card-wrapper">
+                        <h2 class="font-sm-14 text-text-primary margin-b-16">Inbox</h2>
+                        <div class="feed-card-lg inbox-wrapper background-white margin-b-24">
+                            <div class="display-flex ">
+                                <div class="inbox-message">
+                                    <img src="./assets/images/column-3/message.png" alt="Iccon">
+                                </div>
+                                <div class="inbox-content margin-l-16">
+                                    <h2 class="feed-heading2 margin-b-4">1</h2>
+                                    <p class="initiative-text font-sm-14 text-black">Pending Task</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-card-wrapper">
+                        <h2 class="font-sm-14 text-text-primary margin-b-16">Profile Completion</h2>
+                        <div class="feed-card-lg profile-wrapper background-white margin-b-24">
+                            <div class="display-flex align-center">
+                                <div class="inbox-message">
+                                    <img src="./assets/images/column-3/avatar-80.png" alt="Icon">
+                                </div>
+                                <div class="profile-content margin-l-16">
+                                    <p class="feed-heading2 profile-text margin-b-4">Your Profile Completion</p>
+                                    <h2 class=" font-sm-14 text-text-primary margin-b-4">75% complete</h2>
+                                    <div class="progress-bar ps-relative">
+                                        <div class="progress-acheived ps-absolute" style="width: 75%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="quick-card-wrapper">
+                        <h2 class="font-sm-14 text-text-primary margin-b-16 ">Continuous Feedback</h2>
+                        <div
+                            class="feed-card-lg background-white initiative-card continuous-feedback ps-relative margin-b-24">
+                            <ul class="initiative-list">
+                                <li class="initiative-item display-flex align-center margin-b-16">
+                                    <span class="initiative-count display-inline-flex align-center justify-center">
+                                        <img src="./assets/images/column-3/meeting.png" alt="Icon">
+                                    </span>
+                                    <p class="initiative-text font-sm-14 text-black"><strong>Schedule 1-on-1</strong>
+                                    </p>
+                                </li>
+                                <li class="initiative-item display-flex align-center margin-b-16">
+                                    <span class="initiative-count display-inline-flex align-center justify-center">
+                                        <img src="./assets/images/column-3/setup.png" alt="Icon">
+                                    </span>
+                                    <p class="initiative-text font-sm-14 text-black"><strong>Create an
+                                            Initiative</strong></p>
+                                </li>
+                                <li class="initiative-item display-flex align-center">
+                                    <span class="initiative-count display-inline-flex align-center justify-center">
+                                        <img src="./assets/images/column-3/feedback.png" alt="Icon">
+                                    </span>
+                                    <p class="initiative-text font-sm-14 text-black"><strong>Continuous
+                                            Feedback</strong></p>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="quick-card-wrapper">
+                        <div class="display-flex margin-b-16 align-center justfy-space-between">
+                            <h2 class="font-sm-14 text-text-primary">Open Position</h2>
+                            <button class="view-more-btn">View Details</button>
+                        </div>
+                        <div class="feed-card-lg inbox-wrapper background-white margin-b-24">
+                            <div class="display-flex ">
+                                <div class="inbox-message">
+                                    <img src="./assets/images/column-3/chair.svg" alt="Iccon">
+                                </div>
+                                <div class="inbox-content margin-l-16">
+                                    <h2 class="feed-heading2 margin-b-4">10</h2>
+                                    <p class="initiative-text font-sm-14 text-black">Positions are open</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="quick-card-wrapper">
+                        <div class="display-flex margin-b-16 align-center justfy-space-between">
+                            <h2 class="font-sm-14 text-text-primary">Yesterday's Attendance</h2>
+                            <button class="view-more-btn">View Details</button>
+                        </div>
+                        <div class="feed-card-lg last-attendance-wrapper background-white margin-b-24">
+                            <div class="display-flex log-wrapper">
+                                <div class="last-attendanc-column">
+                                    <h2 class="feed-heading2 margin-b-4">09h 10mins</h2>
+                                    <p class="font-sm-14 text-black">Total working hours</p>
+                                </div>
+                                <div class="last-attendanc-column">
+                                    <div class="log-time display-flex">
+                                        <div class="in-time">
+                                            <label
+                                                class="tag-label log-tab-label margin-l-0 tag-purple-background text-black  display-inline-block">In-time</label>
+                                            <p class="margin-t-8  font-sm text-black padding-l-8">09:00</p>
+
+                                        </div>
+                                        <div class="out-time">
+                                            <label
+                                                class="tag-label log-tab-label margin-l-0 tag-purple-background text-black display-inline-block">Out-time</label>
+                                            <p class="margin-t-8 font-sm text-black padding-l-8">17:30</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
+         <!-- Content Part End-->
     </div>
+    <!-- Main End-->
 
+    <button class="back-to-top active">Back to top</button>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
     <script src="./assets/js/page.js"></script>
 </body>
 

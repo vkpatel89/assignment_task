@@ -12,6 +12,37 @@
 992
 1200 */
 
+@media (max-width: 1199px) {
+    .main-wrapper{
+        padding-right: 16px;
+    } 
+    .feed-details-wrapper{
+        padding-right: 0;
+    }
+    .misc-wrapper{
+        width: 280px;
+        padding: 34px 16px;
+    }
+    .details-wrapper{
+        width: calc(100% - 280px);
+        display: block;
+    }
+    .feed-details-wrapper, .quick-action-wrapper{
+        width: 100%;
+    }
+    .quick-action-wrapper{
+        padding: 0 16px;
+    }
+    .profile-wrapper{
+        margin-right: 0;
+    }
+    .for-you-card{
+        display: block;
+    }
+    .feed-card{
+        margin-bottom: 16px;
+    }
+}
 
 
 @media (max-width: 991px) { 
@@ -165,8 +196,39 @@
         background-size: contain;
         cursor: pointer;
     }
-   
-
+   .main-wrapper{
+        padding-left: 0;
+        padding-right: 0;
+   }
+   .content-wrapper {
+     flex-wrap: wrap;
+   }
+   .misc-wrapper{
+        width: 100%;
+        order: 2;
+   }
+   .details-wrapper{
+    width: 100%;
+   }
+   .feed-details-wrapper{
+        padding: 0 16px;
+   }
+   .padding-16-24{
+    padding: 16px !important;
+   }
+   .welcome-post .misc-profile-card{
+        display: block;
+   }
+   .welcome-post .profile-wrapper{
+    margin-bottom: 16px;
+    text-align: center;
+   }
+   .welcome-post .misc-card-image{
+    margin: 0 auto 16px;
+   }
+   .for-you-card .feed-card{
+    margin-right: 0;
+   }
 }
 
 @media (min-width: 768px) {
@@ -175,6 +237,14 @@
         right: unset;
         left: 0; 
         box-shadow: 1px 0px 1px 0px rgba(0, 0, 0, 0.10);
+    }
+    .secondary-navigation-wrapper{
+        z-index: initial;
+    }
+}
+@media (min-width: 1200px) {
+    .quick-action-top-space{
+        margin-top: 36px;
     }
 }
 @media (min-width: 1600px) {

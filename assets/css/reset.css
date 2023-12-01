@@ -1,15 +1,18 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box
 }
-ul{
+
+ul {
     list-style: none;
 }
-img{
+
+img {
     max-width: 100%;
 }
-button{
+
+button {
     border: 0;
     background: transparent;
     cursor: pointer;
